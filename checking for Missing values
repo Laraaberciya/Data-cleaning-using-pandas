@@ -1,0 +1,37 @@
+
+Data Exploratory Method :
+For the quick overview we can use following methods and attributes of a DataFrame:
+#1
+df.head() # show first 5 rows
+
+#2
+df.tail() # last 5 rows
+
+#3
+df.columns # list all column names
+
+#4
+df.info() # additional info about dataframe
+
+#5
+df.describe() # statistical description, only for numeric values
+How To Check For Missing Values In Pandas :
+#1
+df.isnull().sum() #How many missing data in total 
+
+#2
+data['column-name'].isnull().sum() #How many missing data in one columen
+
+
+#3
+df['column-name'].isnull() #where the is data missing in one columen 
+
+
+#4 
+import seaborn as sns
+sns.heatmap(df.isnull(),yticklabels=False, annot=True); #visualization For data missing 
+-How to Handle Missing Data
+
+-How To Check For Missing Values In Pandas
+
+ 
